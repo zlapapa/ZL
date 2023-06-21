@@ -24,7 +24,7 @@ if not success then
 end
 
 local function Loadscript(Script)
-    local Domain = "https://raw.githubusercontent.com/KingGoddom/RO/main/"
+    local Domain = "https://raw.githubusercontent.com/zlapapa/ZL/main/"
     return loadstring(game:HttpGetAsync(("%s%s.lua"):format(Domain, Script)))()
 end
 
@@ -60,6 +60,6 @@ end
 
 LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.InProgress then
-        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/KingGoddom/RO/main/load.lua')()")
+        QueueOnTeleport("loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/zlapapa/ZL/main/load.lua')()")
     end
 end)
